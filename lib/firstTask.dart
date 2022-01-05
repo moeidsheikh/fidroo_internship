@@ -12,13 +12,31 @@ class HomePage extends StatelessWidget {
         padding: EdgeInsets.all(50),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
-              children: const [
-                Text("Hello",
-                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25,color: Colors.deepOrange),
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text("Hello   ",
+                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 45,color: Colors.deepOrange),
                 ),
-                Text("Fidroo\nHome\nChef!",
-                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.white),
+                Text("Fidroo\nHome\nChef !",
+                  style: TextStyle(fontWeight: FontWeight.bold,fontSize: 50,color: Colors.white),
                 ),
+                ElevatedButton(
+                    onPressed: () {},
+                    child: Text("Log In"),
+                    style: ElevatedButton.styleFrom(
+                    primary: Colors.white,
+                    onPrimary: Color(0XffFFC533),
+                    minimumSize: Size(450, 30),
+                    side: BorderSide(width: 2,color: Colors.white),
+                  ),
+                ),
+                TextButton(
+                    onPressed: () {},
+                    child: Text("Register"),
+                    style: TextButton.styleFrom(
+                      primary: Colors.white,
+                    ),
+                )
           ],
         ),
       ),
